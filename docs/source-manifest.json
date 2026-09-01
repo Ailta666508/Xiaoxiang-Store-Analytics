@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "note": "SHA-256 hashes identify the four locally supplied source scripts before curation and renaming.",
+  "sources": [
+    {
+      "original_name": "第一问（新）.py",
+      "sha256": "1fef84e0f5ae2e64778ef642f89f3bec05cf04a2af5f3ebd51c14c18520a178a",
+      "release_path": "scripts/analyze_store_demand_drivers.py"
+    },
+    {
+      "original_name": "关键因素.py",
+      "sha256": "cdcb558c4a2ab5256b49e3a36d6f3ed98337752861ae8a5136042fa76f941965",
+      "release_path": "scripts/rank_store_feature_importance.py"
+    },
+    {
+      "original_name": "第二问分析.py",
+      "sha256": "b3d8ca9106129f98b71f1b06920072d919d91e980d21f2f2b36ed3899df667d6",
+      "release_path": "scripts/train_distance_band_order_forecaster.py"
+    },
+    {
+      "original_name": "网页.py",
+      "sha256": "e3952b9e65c0954f147a3565457d099d042f18384b990ef9bae0ff14dd752445",
+      "release_path": "scripts/serve_order_prediction_dashboard.py"
+    }
+  ]
+}

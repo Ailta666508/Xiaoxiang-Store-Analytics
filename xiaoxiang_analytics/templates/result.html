@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forecast result</title>
+    <style>
+      :root { color-scheme: light; font-family: Inter, system-ui, sans-serif; }
+      body { margin: 0; background: #f4f7f5; color: #173329; }
+      main { max-width: 760px; margin: 48px auto; padding: 32px; background: white; border-radius: 18px; box-shadow: 0 12px 36px #163c2a18; }
+      table { width: 100%; border-collapse: collapse; margin: 22px 0; }
+      th, td { padding: 12px; border-bottom: 1px solid #dbe6e1; text-align: left; }
+      th { color: #50655d; }
+      a { color: #087d4a; font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Predicted daily orders</h1>
+      <table>
+        <thead><tr><th>Distance band</th><th>Orders</th></tr></thead>
+        <tbody>
+          {% for label, value in predictions.items() %}
+            <tr><td>{{ label }}</td><td>{{ value }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <a href="{{ url_for('index') }}">Run another forecast</a>
+    </main>
+  </body>
+</html>

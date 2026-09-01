@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xiaoxiang Store Order Forecast</title>
+    <style>
+      :root { color-scheme: light; font-family: Inter, system-ui, sans-serif; }
+      body { margin: 0; background: #f4f7f5; color: #173329; }
+      main { max-width: 760px; margin: 48px auto; padding: 32px; background: white; border-radius: 18px; box-shadow: 0 12px 36px #163c2a18; }
+      h1 { margin-top: 0; }
+      p { color: #50655d; }
+      form { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; }
+      label { display: grid; gap: 7px; font-weight: 650; }
+      input { padding: 11px 12px; border: 1px solid #bfd0c8; border-radius: 9px; font: inherit; }
+      button { grid-column: 1 / -1; padding: 13px; border: 0; border-radius: 10px; background: #12a765; color: white; font-weight: 750; cursor: pointer; }
+      .error { padding: 12px; background: #ffe8e8; color: #8b2222; border-radius: 9px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Distance-band order forecast</h1>
+      <p>Enter candidate-store coverage, user, and competition indicators.</p>
+      {% if error %}<p class="error">{{ error }}</p>{% endif %}
+      <form method="post">
+        {% for feature in features %}
+          <label>{{ feature }}<input name="{{ feature }}" type="number" step="any" required></label>
+        {% endfor %}
+        <button type="submit">Predict daily orders</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+.DS_Store
+
+# Business source data are supplied separately and are not redistributed.
+data/*
+!data/README.md
+*.xlsx
+*.xls
+
+# Generated models and analysis artifacts.
+results/
+*.joblib
+*.pkl
+
+# Source report and office documents are not part of the code release.
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.zip
