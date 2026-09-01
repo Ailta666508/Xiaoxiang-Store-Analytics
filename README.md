@@ -8,8 +8,6 @@
 
 This project studies store-location and operating decisions for Xiaoxiang Supermarket through multidimensional data mining and machine learning. It connects three tasks: identifying demand drivers, predicting M12 daily orders across five delivery-distance bands, and exposing the forecast through a lightweight web interface.
 
-> **Release history.** The initial code was developed locally from March to June 2025 without a commit-by-commit version history. This repository provides a curated release of that code.
-
 This is an independent project showcase. It is not an official Meituan repository, production service, or endorsement.
 
 ## Project highlights
@@ -156,3 +154,5 @@ The test suite covers IQR filtering and model comparison, the random-forest base
 The source report presents the work under the team name **Meishu Zhixing (美数智行)** and does not provide a complete individual author list. **Zihan Shen** maintains and curated this public code release. GitHub's contributor list reflects commit authorship for this repository and should not be interpreted as sole authorship of the original team project.
 
 No open-source license is granted by this repository. Please contact the relevant project rights holders before reusing the code. Meituan and Xiaoxiang Supermarket names and marks belong to their respective owners.
+
+**Note:** This project was initially developed locally. The Git repository was created when the codebase was prepared for publication, so the early development history is unavailable. Subsequent updates are tracked in this repository.
